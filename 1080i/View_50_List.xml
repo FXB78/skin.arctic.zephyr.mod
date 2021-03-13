@@ -528,8 +528,9 @@
                     <!--<oninfo condition="ListItem.IsCollection">ActivateWindow(1132)</oninfo>-->
                     <visible>String.Contains(Container.FolderPath,plugin://plugin.program.advanced.launcher/,left) | ![Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(actors) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes) | [Container.Content(files) + !String.Contains(Container.FolderPath,plugin://,left) + !String.IsEqual(Container.FolderPath,library://video/movies/) + !String.IsEqual(Container.FolderPath,library://video/tvshows/) + !String.IsEqual(Container.FolderPath,special://videoplaylists/)]]</visible>
                     <top>PosterPad</top>
-                    <height>PosterH</height>
-                    <left>ListSquareX</left>
+                    <height>PosterH</height>                    
+                    <include condition="Skin.HasSetting(disable.poster.550)" content="def_left"><param name="left" value="SidePad" /></include>
+                    <include condition="!Skin.HasSetting(disable.poster.550)" content="def_left"><param name="left" value="ListSquareX" /></include>
                     <right>SidePad</right>
                     <onleft condition="!Skin.HasSetting(global.kioskmode)">9000</onleft>
                     <onright>60</onright>
@@ -538,10 +539,23 @@
                     <pagecontrol>60</pagecontrol>
                     <viewtype label="535">list</viewtype>
                     <scrolltime>200</scrolltime>
-                    <itemlayout width="ListSquareW" height="64">
+                    <itemlayout width="ListSquareW" height="64" condition="!Skin.HasSetting(disable.poster.550)">
                         <include>50itemlayout_square</include>
                     </itemlayout>
-                    <focusedlayout width="ListSquareW" height="64">
+                    <focusedlayout width="ListSquareW" height="64" condition="!Skin.HasSetting(disable.poster.550)">
+                        <control type="group">
+                            <visible>Control.HasFocus(550)</visible>
+                            <include>50focuslayout_square</include>
+                        </control>
+                        <control type="group">
+                            <visible>!Control.HasFocus(550)</visible>
+                            <include>50itemlayout_square</include>
+                        </control>
+                    </focusedlayout>
+                    <itemlayout width="1760" height="64" condition="Skin.HasSetting(disable.poster.550)">
+                        <include>50itemlayout_square</include>
+                    </itemlayout>
+                    <focusedlayout width="1760" height="64" condition="Skin.HasSetting(disable.poster.550)">
                         <control type="group">
                             <visible>Control.HasFocus(550)</visible>
                             <include>50focuslayout_square</include>
@@ -554,7 +568,7 @@
                 </control>
                 <include>Furniture_Scrollbar</include>
             </control>
-            <include>View_50_SidePoster_Square</include>
+            <include condition="!Skin.HasSetting(disable.poster.550)">View_50_SidePoster_Square</include>
         </control>
     </include>
     
