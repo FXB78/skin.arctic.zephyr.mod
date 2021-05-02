@@ -514,6 +514,15 @@
                             <onclick>Skin.ToggleSetting(widgets.fade)</onclick>
                             <enable>$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets] | $EXP[HomeIsVertical]</enable>
                         </control>
+                        <control type="radiobutton" id="9853">
+                            <width>1310</width>
+                            <visible>ControlGroup(9100).HasFocus(9101)</visible>
+                            <include>DefSettingsButtonGradient</include>
+                            <label>37994</label>
+                            <selected>Skin.HasSetting(homemenu.widgets.infoslider)</selected>
+                            <onclick>Skin.ToggleSetting(homemenu.widgets.infoslider)</onclick>
+                            <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix)</enable>
+                        </control>                        
                         <control type="button" id="9730">
                             <visible>ControlGroup(9100).HasFocus(9101)</visible>
                             <include>DefSettingsLabel</include>
