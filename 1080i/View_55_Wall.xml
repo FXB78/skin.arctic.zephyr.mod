@@ -118,46 +118,13 @@
         </control>
     </include>
 
-    <include name="View_55_Info_Left">
-        <control type="group">
-            <left>35</left>
-            <top>20</top>
-            <animation effect="fade" start="0" end="100" delay="1300" time="200" reversible="false">Focus</animation>
-            <control type="label">
-                <width>610</width>
-                <height>50</height>
-                <font>MediumBold</font>
-                <textcolor>Light1</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="textbox">
-                <top>70</top>
-                <width>610</width>
-                <height>150</height>
-                <font>Tiny</font>
-                <textcolor>Light2</textcolor>
-                <align>justify</align>
-                <label>$INFO[ListItem.Plot]</label>
-            </control>
-            <control type="label">
-                <top>230</top>
-                <width>610</width>
-                <height>50</height>
-                <font>Tiny</font>
-                <align>right</align>
-                <textcolor>Light1</textcolor>
-                <label>$VAR[SubLabel55]</label>
-            </control>
-        </control>
-    </include>
-
-    <include name="View_55_Info_Right">
+    <include name="View_55_Info_Slide">
         <control type="group">
             <left>250</left>
             <top>30</top>
             <animation effect="fade" start="0" end="100" delay="1300" time="200" reversible="false">Focus</animation>
             <control type="label">
-                <width>600</width>
+                <width>595</width>
                 <height>50</height>
                 <font>MediumBold</font>
                 <textcolor>Light1</textcolor>
@@ -239,7 +206,7 @@
                                 <effect type="fade" start="0" end="100" tween="cubic" easing="inout" delay="200" time="150"/>
                             </animation>
                         </control>
-                        <include>View_55_Info_Right</include>
+                        <include>View_55_Info_Slide</include>
                     </control>
                     <control type="group">
                         <posx>-668</posx>
@@ -259,7 +226,7 @@
                                 <effect type="fade" start="0" end="100" delay="200" time="150" tween="cubic" easing="inout"/>
                             </animation>
                         </control>
-                        <include>View_55_Info_Left</include>
+                        <include>View_55_Info_Slide</include>
                     </control>
                     <control type="group">
                         <height>325</height>
