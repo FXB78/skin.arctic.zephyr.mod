@@ -119,8 +119,10 @@
     </include>
 
     <include name="View_55_Info_Slide">
+        <param name="left" value="$PARAM[left]" default="35"/>
+        <definition>
         <control type="group">
-            <left>250</left>
+            <left>$PARAM[left]</left>
             <top>30</top>
             <animation effect="fade" start="0" end="100" delay="1300" time="200" reversible="false">Focus</animation>
             <control type="label">
@@ -149,6 +151,7 @@
                 <label>$VAR[SubLabel55]</label>
             </control>
         </control>
+        </definition>
     </include>
 
     <include name="View_55_Wall">
@@ -190,7 +193,7 @@
                     <control type="group">
                         <visible>Skin.HasSetting(55wall.slideinfo) + !String.IsEqual(ListItem.Label,..)</visible>
                         <posx>0</posx>
-                        <posy>0</posy>
+                        <posy>4</posy>
                         <visible>Container(55).Column(0) | Container(55).Column(1) | Container(55).Column(2) | Container(55).Column(3)</visible>
                         <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
                         <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">Hidden</animation>
@@ -202,15 +205,15 @@
                             <height>305</height>
                             <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                             <animation type="Focus">
-                                <effect type="zoom" start="10,0,202,311" end="10,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                                <effect type="zoom" start="10,0,202,307" end="10,0,869,307" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
                                 <effect type="fade" start="0" end="100" tween="cubic" easing="inout" delay="200" time="150"/>
                             </animation>
                         </control>
-                        <include>View_55_Info_Slide</include>
+                        <include content="View_55_Info_Slide"><param name="left" value="250" /></include>
                     </control>
                     <control type="group">
                         <posx>-668</posx>
-                        <top>2</top>
+                        <top>4</top>
                         <visible>Skin.HasSetting(55wall.slideinfo) + !String.IsEqual(ListItem.Label,..)</visible>
                         <visible>Container(55).Column(4) | Container(55).Column(5) | Container(55).Column(6) | Container(55).Column(7)</visible>
                         <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
@@ -222,11 +225,11 @@
                             <height>328</height>
                             <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                             <animation type="Focus">
-                                <effect type="zoom" start="675,0,202,311" end="0,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                                <effect type="zoom" start="675,0,202,307" end="0,0,868,307" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
                                 <effect type="fade" start="0" end="100" delay="200" time="150" tween="cubic" easing="inout"/>
                             </animation>
                         </control>
-                        <include>View_55_Info_Slide</include>
+                        <include content="View_55_Info_Slide"><param name="left" value="42" /></include>
                     </control>
                     <control type="group">
                         <height>325</height>

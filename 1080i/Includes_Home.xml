@@ -5667,7 +5667,7 @@
         <control type="group">
             <visible>$PARAM[visible_slider] + Control.HasFocus($PARAM[id])</visible>
             <posx>0</posx>
-            <posy>0</posy>
+            <posy>4</posy>
             <visible>Container($PARAM[id]).Column(0) | Container($PARAM[id]).Column(1) | Container($PARAM[id]).Column(2) | Container($PARAM[id]).Column(3)</visible>
             <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
             <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">Hidden</animation>
@@ -5678,17 +5678,16 @@
                 <height>305</height>
                 <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                 <animation type="Focus">
-                    <effect type="zoom" start="10,0,202,311" end="10,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                    <effect type="zoom" start="10,0,202,307" end="10,0,869,307" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
                     <effect type="fade" start="0" end="100" tween="cubic" easing="inout" delay="200" time="150"/>
                 </animation>
             </control>
-            <include>View_Home_Info_Slide</include>
-        </control>
-        
+            <include content="View_Home_Info_Slide"><param name="left" value="250" /></include>
+        </control>        
         <control type="group">
             <visible>$PARAM[visible_slider] + Control.HasFocus($PARAM[id])</visible>
             <posx>-668</posx>
-            <top>2</top>
+            <top>4</top>
             <visible>Skin.HasSetting(55wall.slideinfo) + !String.IsEqual(ListItem.Label,..)</visible>
             <visible>Container($PARAM[id]).Column(4) | Container($PARAM[id]).Column(5) | Container($PARAM[id]).Column(6) | Container($PARAM[id]).Column(7)</visible>
             <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
@@ -5700,11 +5699,11 @@
                 <height>328</height>
                 <texture colordiffuse="Dark1" border="5">common/box.png</texture>
                 <animation type="Focus">
-                    <effect type="zoom" start="675,0,202,311" end="0,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                    <effect type="zoom" start="675,0,202,307" end="0,0,869,307" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
                     <effect type="fade" start="0" end="100" delay="200" time="150" tween="cubic" easing="inout"/>
                 </animation>
             </control>
-            <include>View_Home_Info_Slide</include>
+            <include content="View_Home_Info_Slide"><param name="left" value="42" /></include>
         </control>
         <control type="group">
             <height>$PARAM[height]</height>
@@ -6515,8 +6514,10 @@
     </include>
     
     <include name="View_Home_Info_Slide">
+        <param name="left" value="$PARAM[left]" default="35"/>
+        <definition>
         <control type="group">
-            <left>250</left>
+            <left>$PARAM[left]</left>
             <top>30</top>
             <animation effect="fade" start="0" end="100" delay="1300" time="200" reversible="false">Focus</animation>
             <control type="label">
@@ -6548,5 +6549,6 @@
                 <label>$VAR[SubLabel55]</label>
             </control>
         </control>
+        </definition>
     </include>
 </includes>
