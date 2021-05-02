@@ -171,6 +171,7 @@
                 <control type="button" id="55551">
                     <include>DefContextMenuLabel</include>
                     <label>37594</label>
+                    <visible>!Control.IsVisible(519)</visible>
                 </control> 
                 <control type="radiobutton" id="9025">
                     <include>DefContextButtonGradient</include>

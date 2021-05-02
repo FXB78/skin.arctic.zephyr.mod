@@ -5662,7 +5662,49 @@
         <param name="reflections" value="$PARAM[reflections]" default="false"/>
         <param name="top" value="$PARAM[top]" default="305"/>
         <param name="visible_title_overlay" value="$PARAM[visible_title_overlay]" default="false"/>
+        <param name="visible_slider" value="$PARAM[visible_slider]" default="false"/>
         <definition>
+        <control type="group">
+            <visible>$PARAM[visible_slider] + Control.HasFocus($PARAM[id])</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <visible>Container($PARAM[id]).Column(0) | Container($PARAM[id]).Column(1) | Container($PARAM[id]).Column(2) | Container($PARAM[id]).Column(3)</visible>
+            <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
+            <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">Hidden</animation>
+            <control type="image">
+                <top>5</top>
+                <left>10</left>
+                <width>870</width>
+                <height>305</height>
+                <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                <animation type="Focus">
+                    <effect type="zoom" start="10,0,202,311" end="10,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                    <effect type="fade" start="0" end="100" tween="cubic" easing="inout" delay="200" time="150"/>
+                </animation>
+            </control>
+            <include>View_55_Info_Right</include>
+        </control>
+        <control type="group">
+            <visible>$PARAM[visible_slider] + Control.HasFocus($PARAM[id])</visible>
+            <posx>-668</posx>
+            <top>2</top>
+            <visible>Skin.HasSetting(55wall.slideinfo) + !String.IsEqual(ListItem.Label,..)</visible>
+            <visible>Container($PARAM[id]).Column(4) | Container($PARAM[id]).Column(5) | Container($PARAM[id]).Column(6) | Container($PARAM[id]).Column(7)</visible>
+            <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">UnFocus</animation>
+            <animation effect="fade" start="0" end="0" delay="0" time="50" tween="cubic" easing="inout" reversible="false">Hidden</animation>
+            <control type="image">
+                <top>5</top>
+                <right>10</right>
+                <width>870</width>
+                <height>328</height>
+                <texture colordiffuse="Dark1" border="5">common/box.png</texture>
+                <animation type="Focus">
+                    <effect type="zoom" start="675,0,202,311" end="0,0,868,311" tween="cubic" easing="inout" delay="1000" time="400" reversible="false"/>
+                    <effect type="fade" start="0" end="100" delay="200" time="150" tween="cubic" easing="inout"/>
+                </animation>
+            </control>
+            <include>View_55_Info_Left</include>
+        </control>
         <control type="group">
             <height>$PARAM[height]</height>
             <top>$PARAM[top]</top>
@@ -5686,6 +5728,9 @@
                 <param name="id" value="$PARAM[id]"/>
             </include>
         </control>
+        
+        
+        
         </definition>
     </include>
 
