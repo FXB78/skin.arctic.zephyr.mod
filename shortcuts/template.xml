@@ -638,6 +638,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2199">
                 <control type="grouplist">
@@ -696,6 +698,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]1"/>
@@ -819,6 +822,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.2" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider.2" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2299">
                 <control type="grouplist">
@@ -871,6 +876,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]2"/>
@@ -982,6 +988,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.3" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider.3" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2399">
                 <control type="grouplist">
@@ -1034,6 +1042,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]3"/>
@@ -1145,6 +1154,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.4" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider.4" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2499">
                 <control type="grouplist">
@@ -1197,6 +1208,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]4"/>
@@ -1308,6 +1320,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.5" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider.5" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2599">
                 <control type="grouplist">
@@ -1360,6 +1374,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]5"/>
@@ -1471,6 +1486,8 @@
         <property name="aspectratio">keep</property>
         <property name="distance" tag="property" attribute="name|widgetEdgeDistance.6" value="yes">30</property>
         <property name="distance">10</property>
+        <property name="hasinfoslider" tag="property" attribute="name|widgetInfoslider.6" value="yes">true</property>
+        <property name="hasinfoslider">false</property>
         <controls>
             <control type="group" id="301$SKINSHORTCUTS[id]2699">
                 <control type="grouplist">
@@ -1523,6 +1540,7 @@
                     <param name="shortcutsclearlogo" value="$SKINSHORTCUTS[widgetclearlogothumb]"/>
                     <param name="aspectratio" value="$SKINSHORTCUTS[aspectratio]"/>
                     <param name="distance" value="$SKINSHORTCUTS[distance]"/>
+                    <param name="hasinfoslider" value="$SKINSHORTCUTS[hasinfoslider] + $SKINSHORTCUTS[isnormallayout] + !$SKINSHORTCUTS[isfullscreenwidget]"/>
                 </include>
                 <include content="TemplateWeatherFocusLayout" condition="$SKINSHORTCUTS[isweatherlayout]">
                     <param name="shortcutsid" value="301$SKINSHORTCUTS[id]6"/>

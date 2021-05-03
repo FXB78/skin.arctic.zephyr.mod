@@ -591,6 +591,23 @@
                     <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetBanner),yes)">SetProperty(widgetBanner,)</onclick>
                     <onclick>SendClick(404)</onclick>
                 </control>
+                <control type="radiobutton" id="10101" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect),Poster)]</visible>
+                </control>
             </control>
 
             <!-- Widget 2 -->
@@ -761,6 +778,23 @@
                     <label>$LOCALIZE[37790]</label>
                     <label2>$VAR[AutoScrollTime2]</label2>
                 </control>
+                <control type="radiobutton" id="10102" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.2),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider.2)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.2),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.2),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.2),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect.2)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect.2),Poster)]</visible>
+                </control>
             </control>
 
             <!-- Widget 3 -->
@@ -930,6 +964,23 @@
                     <label>$LOCALIZE[37790]</label>
                     <label2>$VAR[AutoScrollTime3]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
+                </control>
+                <control type="radiobutton" id="10103" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.3),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider.3)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.3),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.3),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.3),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect.3)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect.3),Poster)]</visible>
                 </control>
             </control>
 
@@ -1102,6 +1153,23 @@
                     <label2>$VAR[AutoScrollTime4]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
                 </control>
+                <control type="radiobutton" id="10104" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.4),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider.4)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.4),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.4),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.4),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect.4)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect.4),Poster)]</visible>
+                </control>
             </control>
 
             <!-- Widget 5 -->
@@ -1272,6 +1340,23 @@
                     <label>$LOCALIZE[37790]</label>
                     <label2>$VAR[AutoScrollTime5]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
+                </control>
+                <control type="radiobutton" id="10105" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.5),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider.5)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.5),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.5),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.5),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect.5)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect.5),Poster)]</visible>
                 </control>
             </control>
             
@@ -1445,6 +1530,23 @@
                     <label>$LOCALIZE[37790]</label>
                     <label2>$VAR[AutoScrollTime6]</label2>
                     <visible>[Skin.HasSetting(home.vertical) + Skin.HasSetting(home.vertical.widgets)] | [Skin.HasSetting(home.modernwidgets)  + Skin.HasSetting(home.vertical.widgets)]</visible>
+                </control>
+                <control type="radiobutton" id="10106" description="Infoslider">
+                    <radioposx>845</radioposx>
+                    <selected>String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.6),yes)</selected>
+                    <width>100%</width>
+                    <height>66</height>
+                    <label>$LOCALIZE[37994]</label>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <texturenofocus colordiffuse="Black12" border="5">common/box.png</texturenofocus>
+                    <align>left</align>
+                    <include>DefDialogButtonsGradient</include>
+                    <onclick>SetProperty(customProperty,widgetInfoslider.6)</onclick>
+                    <onclick condition="!String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.6),yes)">SetProperty(customValue,yes)</onclick>
+                    <onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetInfoslider.6),yes)">SetProperty(customValue,)</onclick>
+                    <onclick>SendClick(404)</onclick>
+                    <enable>[$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]] + !Skin.HasSetting(homemenu.netflix) + !String.IsEqual(Container(211).ListItem.Property(widgetFullscreen.6),yes)</enable>
+                    <visible>[String.IsEmpty(Container(211).ListItem.Property(widgetaspect.6)) | String.IsEqual(Container(211).ListItem.Property(widgetaspect.6),Poster)]</visible>
                 </control>
             </control>
         </control>
